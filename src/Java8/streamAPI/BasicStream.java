@@ -3,7 +3,7 @@ package Java8.streamAPI;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class EvenStreams {
+public class BasicStream {
 
 	public static void main(String[] args) {
 
