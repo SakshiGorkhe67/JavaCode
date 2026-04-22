@@ -174,6 +174,99 @@ public class BasicStream {
 
 		names.stream().filter(s->s.startsWith("S")).forEach(System.out::println);
 
+       // 31 Print Numbers Greater Than 10
+		list.stream().filter(v->v>10).forEach(System.out::println);
+
+		// 32 Check If List Contains a Number 5
+		//anyMatch returns a number
+
+		boolean num=list.stream().anyMatch(u->u==5);
+		System.out.println(num);
+
+		//33 Count Odd Numbers
+		//count() return long
+		long oddCOunt=list.stream()
+				.filter(t->t%2!=0)
+				.count();
+		System.out.println(oddCOunt);
+
+		// 34 Get First 5 Elements
+		list.stream()
+				.limit(5)
+				.forEach(System.out::println);
+
+		//35 Skip First 2 Elements
+		list.stream()
+				.skip(2)
+				.forEach(System.out::println);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		//Revision on Basics
+
+		//1  Even numbers
+		System.out.println("even numbers");
+		   list.stream()
+				   .filter(r->r%2==0).forEach(System.out::println);
+
+
+
+		//2   Square Each number
+		System.out.println("Square Each number");
+
+
+		   list.stream()
+				   .map(s->s*s).forEach(System.out::println);
+
+		//3 Remove Duplicate
+		System.out.println("Remove Duplicate");
+		     list.stream()
+					 .distinct()
+					 .forEach(System.out::println);
+		//4  Sort List in ascending
+		System.out.println("Sort List in ascending");
+
+		list.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
+
+
+		//5  Find maximun number
+		System.out.println("Find maximun number");
+
+		int maxnum=list.stream().max(Integer::compare).get();
+		System.out.println(maxnum);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
