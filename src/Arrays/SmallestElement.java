@@ -1,16 +1,15 @@
 package Arrays;
 
 public class SmallestElement {
+    public static void main(String[] args) {
+        int arr[]={4,3,1,5,2,45,67};
+        int min=arr[0];
+        for(int i=0;i<arr.length;i++){
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int array[]=new int[] {10,5,15,7,3,5};
-		int min=Integer.MAX_VALUE;
-		for(int i:array) {
-			if(i<min) {min=i;}
-		}
-		System.out.println("Minimum value is:"+min);
-
-	}
-
+            if(min>arr[i]){
+                min=arr[i];
+            }
+        }
+        System.out.println(min);
+    }
 }
