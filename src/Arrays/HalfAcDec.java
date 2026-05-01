@@ -12,7 +12,9 @@ public class HalfAcDec {
      int end=n-1;
 
      while(start!=end){
-         int temp = arr[start];
+         int temp = arr[start]
+
+                 ;
          arr[start] = arr[end];
          arr[end] = temp;
          start++;
